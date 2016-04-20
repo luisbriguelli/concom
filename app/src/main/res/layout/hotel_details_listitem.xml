@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="0dp"
+    card_view:cardMaxElevation="0dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false"
+    android:layout_marginBottom="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/relative_hotel_details_image">
+
+            <ImageView
+                android:id="@+id/imageViewHotelDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/hoteis006"
+            />
+
+            <TextView
+                android:id="@+id/tvHotelDetailsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel Hilton"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:gravity="left"
+                android:background="@color/black_30"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hotel_details_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hotel_details_image"
+            android:paddingBottom="6dp"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewHotelDetailsPrice"
+                android:drawableLeft="@drawable/ic_room_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawablePadding="6dp"
+                android:text="R$500,00"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/textViewHotelDetailsPriceNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="por pessoa"
+                android:textSize="10sp"
+                android:layout_below="@id/textViewHotelDetailsPrice"
+                android:layout_alignRight="@id/textViewHotelDetailsPrice"
+                android:layout_marginTop="-5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                >
+
+                <TextView
+                    android:id="@+id/textViewHotelDetailsRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_rating_hotel"
+                    android:text="4,73"
+                    android:gravity="center"
+                    android:drawablePadding="6dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewHotelsDetailsRoomMate"
+                    android:layout_toRightOf="@id/textViewHotelDetailsRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_roomates_count"
+                    android:drawablePadding="6dp"
+                    android:textSize="18sp"
+                    android:text="3"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_divider_price_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/divider"
+            android:layout_below="@id/relative_hotel_details_price"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHotelViewDescription"
+            android:layout_below="@id/view_divider_price_detail"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp"
+            android:text="Um conceito diferente para hambuguers caseiros com molhos de especiarias acompanham o combo. Aproveite e deguste nossas cervejas especiais."
+            />
+
+        <View
+            android:id="@+id/view_divider_hotel_description"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/divider"
+            android:layout_below="@id/tvHotelViewDescription"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHotelViewLocation"
+            android:layout_below="@id/view_divider_hotel_description"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp"
+            android:drawableLeft="@drawable/ic_roomates_count"
+            android:drawablePadding="12dp"
+            android:text="Rua José Lucas Filho, 120 - Centro - Esmeraldas - Minas Gerais"
+            />
+
+        <View
+            android:id="@+id/view_divider_hotel_location"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/divider"
+            android:layout_below="@id/tvHotelViewLocation"
+            android:layout_marginTop="8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_hotels_date_detail"
+            android:layout_below="@id/view_divider_hotel_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelViewCheckIn"
+                android:drawableLeft="@drawable/ic_rating_hotel"
+                android:drawablePadding="12dp"
+                android:text="Entrada:"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelViewCheckInHour"
+                android:layout_toRightOf="@id/tvHotelViewCheckIn"
+                android:drawablePadding="12dp"
+                android:text="14:00"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelViewCheckOut"
+                android:layout_toRightOf="@id/tvHotelViewCheckInHour"
+                android:drawablePadding="12dp"
+                android:text="Saída:"
+                android:layout_marginRight="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelViewCheckOutHour"
+                android:layout_toRightOf="@id/tvHotelViewCheckOut"
+                android:drawablePadding="12dp"
+                android:text="12:00"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_divider_hotel_date"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/divider"
+            android:layout_below="@id/relative_hotels_date_detail"
+            android:layout_marginTop="8dp"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

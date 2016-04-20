@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:id="@+id/ic_logo"
+        android:src="@drawable/ic_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_below="@+id/ic_logo"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/textView_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <com.concom.concom.AutoCompleteConCom
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLocal"
+            android:hint="Hotel ou Destino"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextLocal"
+            android:weightSum="2"
+            android:layout_marginTop="12dp"
+            android:id="@+id/linearLayout">
+
+            <com.concom.concom.EditTextUfa
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextCheckIn"
+                android:hint="Check in"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:onClick="onClickCheckIn"
+                android:layout_marginRight="16dp"/>
+
+            <com.concom.concom.EditTextUfa
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextCheckOut"
+                android:hint="Check out"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:onClick="onClickCheckOut"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSeekBarPeople"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="1 colega de quarto"
+            android:textSize="20sp"
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarPeople"
+            android:layout_below="@+id/textViewSeekBarPeople"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:progress="1"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSeekBarPrice"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/seekBarPeople"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="R$ 0,00*"
+            android:textSize="20sp"
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarPrice"
+            android:layout_below="@+id/textViewSeekBarPrice"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:progress="0"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPriceNote"
+            android:gravity="center"
+            android:layout_below="@+id/seekBarPrice"
+            android:layout_alignRight="@+id/seekBarPrice"
+            android:layout_alignEnd="@+id/seekBarPrice"
+            android:text="*valor por pessoa"
+            android:textSize="10dp"
+            />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="onClickSearch"
+        android:src="@drawable/ic_search_btn"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/button_selector"/>
+
+
+</RelativeLayout>

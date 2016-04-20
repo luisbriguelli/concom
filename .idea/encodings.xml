@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/teste.json" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/concom/concom/AutoCompleteConCom.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/concom/concom/ClickListener.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/concom/concom/EditTextUfa.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/concom/concom/HttpRequest.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/concom/concom/ListViewItem.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/concom/concom/TypeFaces.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/hoteis001.png" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/hoteis002.png" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/hoteis003.png" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/hoteis004.png" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/hoteis005.png" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/hoteis006.jpg" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/hotel_details_activity.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/hotel_details_listitem.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/hotels_list_activity.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/hotels_list_listitem.xml" charset="windows-1252" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

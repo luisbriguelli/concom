@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="0dp"
+    card_view:cardMaxElevation="0dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false"
+    android:layout_marginBottom="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:background="@drawable/card_selector"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/relative_hotel_details_image">
+
+            <ImageView
+                android:id="@+id/imageViewHotelsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/hoteis006"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_20"
+                />
+            <TextView
+                android:id="@+id/tvHotelsListName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOTEL HILTON"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:gravity="left"
+                android:background="@color/black_30"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewHotelsListPrice"
+            android:layout_below="@id/relative_hotel_details_image"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="12dp"
+            android:drawableLeft="@drawable/ic_room_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawablePadding="4dp"
+            android:text="R$500,00"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewHotelsListPriceNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="por pessoa"
+            android:textSize="10sp"
+            android:layout_below="@id/textViewHotelsListPrice"
+            android:layout_alignRight="@id/textViewHotelsListPrice"
+            android:layout_marginTop="-3dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hotel_details_image"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="12dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/textViewHotelsListRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rating_hotel"
+                android:text="4,73"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:layout_marginRight="12dp"
+                android:textSize="18sp"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewHotelsListRoomMate"
+                android:layout_toRightOf="@id/textViewHotelsListRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_roomates_count"
+                android:drawablePadding="4dp"
+                android:textSize="18sp"
+                android:text="3"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,26 @@
+[
+    {
+        "VENDOR_CODE": "AAA",
+        "POI_NAME": "Anaa",
+        "CITY_NAME": "Anaa",
+        "COUNTRY_CODE": "PF",
+        "LATITUDE": "-17.354167",
+        "LONGITUDE": "-145.49611100000001"
+    },
+    {
+        "VENDOR_CODE": "AAC",
+        "POI_NAME": "El Arish, Sinai",
+        "CITY_NAME": "El Arish",
+        "COUNTRY_CODE": "EG",
+        "LATITUDE": "31.077221999999999",
+        "LONGITUDE": "33.832222000000002"
+    },
+    {
+        "VENDOR_CODE": "AAE",
+        "POI_NAME": "Annaba",
+        "CITY_NAME": "Annaba",
+        "COUNTRY_CODE": "DZ",
+        "LATITUDE": "36.821666999999998",
+        "LONGITUDE": "7.8099999999999987"
+    }
+]
